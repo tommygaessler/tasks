@@ -11,29 +11,31 @@
   <div class="row">
     <div class="column">
       <h2><span [matBadge]="tasks | counter:false" matBadgeOverlap="false">In Progress</span></h2>
-      <ul>
+      <mat-list>
         <ng-container *ngFor="let task of tasks; let i = index">
-        <li *ngIf="!task.completed">
-          <mat-checkbox (change)="task.completed = true; updateTasks()" [checked]="false">{{ task.name }}</mat-checkbox>
+        <mat-list-item *ngIf="!task.completed">
+          <mat-checkbox (change)="task.completed = true; updateTasks()" [checked]="false" color="primary">{{ task.name }}</mat-checkbox>
           <button mat-icon-button color="warn" (click)="tasks.splice(i, 1); updateTasks()">
             <mat-icon>delete</mat-icon>
           </button>
-        </li>
+        </mat-list-item>
+        <mat-divider *ngIf="!task.completed"></mat-divider>
         </ng-container>
-      </ul>
+      </mat-list>
     </div>
     <div class="column">
       <h2><span [matBadge]="tasks | counter:true" matBadgeOverlap="false">Completed</span></h2>
-      <ul>
+      <mat-list>
         <ng-container *ngFor="let task of tasks; let i = index">
-          <li *ngIf="task.completed">
-            <mat-checkbox (change)="task.completed = false; updateTasks()" [checked]="true">{{ task.name }}</mat-checkbox>
+          <mat-list-item *ngIf="task.completed">
+            <mat-checkbox (change)="task.completed = false; updateTasks()" [checked]="true" color="primary">{{ task.name }}</mat-checkbox>
             <button mat-icon-button color="warn" (click)="tasks.splice(i, 1); updateTasks()">
               <mat-icon>delete</mat-icon>
           </button>
-          </li>
+          </mat-list-item>
+          <mat-divider *ngIf="task.completed"></mat-divider>
         </ng-container>
-      </ul>
+      </mat-list>
     </div>
   </div>
 </main>

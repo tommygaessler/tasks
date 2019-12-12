@@ -18,3 +18,9 @@ h1, h2 {
 .column {
   flex: 1;
 }
+
+@media (max-width: 800px) {
+  .row {
+    display: block;
+  }
+}

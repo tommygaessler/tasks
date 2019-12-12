@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.10.
 
+## Deployed Site
+
+https://tommygaessler.com/tasks/
+
+## Presented at
+
+- [Rocky Mountain Angular](https://www.meetup.com/RockyMountainAngular/events/266594760/)
+- [BoulderJS](https://www.meetup.com/Boulder-JS/events/mqgtqqyznbvb/)
+- [Angular Boulder](https://www.meetup.com/angular-boulder/events/262404778/)
+- [Front Range Frontend](https://www.meetup.com/front-range-front-end/events/bxrfwqyzjbjb/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

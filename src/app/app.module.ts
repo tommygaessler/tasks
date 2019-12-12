@@ -12,7 +12,9 @@ import {
   MatInputModule,
   MatButtonModule,
   MatIconModule,
-  MatBadgeModule
+  MatBadgeModule,
+  MatListModule,
+  MatDividerModule
 } from '@angular/material';
 import { CounterPipe } from './pipes/counter.pipe';
 
@@ -32,7 +34,9 @@ import { CounterPipe } from './pipes/counter.pipe';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
